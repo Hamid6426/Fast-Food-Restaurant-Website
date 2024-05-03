@@ -1,0 +1,264 @@
+.menu {
+  max-width: 450px;
+  margin: auto auto;
+  padding: 0 30px;
+}
+
+.menu-heading {
+  max-width: 600px;
+  margin: 19px auto;
+  display: block;
+  flex: 1;
+  font-size: 25px;
+  color: #fff;
+  background-color: #FD5454;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.6);
+  padding: 15px 20px;
+  font-weight: bold;
+}
+
+
+.food-item {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffbb00;
+  border-radius: 10px;
+  margin: 14px 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  padding: 8px 20px 8px 20px;
+}
+
+.food-name {
+  font-weight: bold;
+  text-align: left;
+  justify-content: space-evenly;
+}
+
+.food-name span {
+  margin-right: 30px;
+  padding: 5px 15px 5px 0;
+
+  border-right: 2px solid #444;
+}
+
+.price {
+  text-align: right;
+  border-left: 2px solid #444;
+  padding-left: 15px;
+
+}
+
+.menu-heading {
+  font-size: 32px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-bottom: 20px;
+  color: #444;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@100&display=swap');
+
+/*color pallete best for fast food restaurant =  Red, Yellow and Orange high or low contrast  */
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Tangerine', sans-serif;
+      font-size: 20px;
+      line-height: 1.5;
+      text-align: center;
+      background-color: lightblue;
+    
+    }
+    
+    h1, h2 {
+      margin-bottom: -20px;
+    }
+    
+    ul {
+      list-style-type: none;
+    }
+    
+    img {
+      margin-top: 40px;
+      margin-bottom: 16px;
+    }
+    
+    .container {
+      max-width: 1100px;
+      margin: auto auto;
+      padding: 0 30px;
+    }
+    
+    /*navbar section*/
+    
+    .navbar .container{
+      display: flex;
+      justify-content: space-between;
+    
+    }
+    
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 25px;
+      font-weight: bold;
+      margin-right: 20px;
+    }
+    
+    .navbar a:hover {
+      color: black;
+      font-size: 25px;
+      
+    }
+    
+    .navbar ul {
+      display: flex;
+      flex: 1;
+      background:#ff5555;
+      justify-content: center;
+      font-size: 20px;
+      color: #fff;
+      border-radius: 10px;
+      margin: 20px 10px;
+      box-shadow: 0 3px 5px rgba(0,0,0,0.6);
+      padding: 15px 20px;
+    }
+    
+    .navbar ul li {
+      margin-left: 20px;
+    }
+    
+    /*banner_box section*/
+    
+    .banner_box .container {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .banner_box h1 {
+      margin-top:10px;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 45px;
+    }
+    
+    .banner_box p {
+      text-align: center;
+    }
+    
+    .menu .container h1 {
+      font-size: 35px;
+      margin: 10px 20px;
+      text-align: center;
+    }
+    
+    .item {
+      flex: 1;
+      background-color: #ffbb00;
+      height: 200px;
+      font-size: 20px;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: #444;
+      border-radius: 10px;
+      margin: 10px 10px 0;
+      box-shadow: 0 3px 5px rgba(0,0,0,0.6);
+      padding: 25px 20px 0px;
+    }
+    
+    /*boxes section*/
+    
+    .boxes .container{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 13px;
+    }
+    
+    .boxes h2 {
+      margin-bottom: 5px;
+    }
+    
+    .boxes img {
+      margin-top: 25px;
+      border-radius: 10%;
+    }
+    
+    .boxes a {
+      text-decoration: none;
+    }
+    
+    .box{
+      flex: 1;
+      background: #ff5555;
+      
+      color: #fff;
+      border-radius: 10px;
+      margin: 20px 10px;
+      box-shadow: 0 3px 5px rgba(0,0,0,0.6);
+      padding: 15px 20px;
+    }
+    
+    .box:hover {
+      box-shadow: 5px 0px 25px black;
+    }
+    
+    /*footer section*/
+    
+    .footer_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .footer_box {
+      border-radius: 10px;
+      margin: 50px 15px;
+    }
+    
+    /*responsive design*/
+    
+    @media(max-width: 700px) {
+      .navbar .container .nav, .header .container {
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+      }
+    
+      .navbar .container .nav li{
+        margin: 7px;
+      }
+    
+      .header_box .container, .boxes .container {
+        display: block;
+        text-align: center;
+      }
+    
+      .header_box .container, .boxes .container a {
+        display: block;
+        text-align: center;
+      }
+    
+      .header .container img {
+        width: 267px;
+        height: 73px;
+      }
+    
+      .promotion .container h1{
+        font-size: 20px;
+      }
+    
+      .menu .container h1 {
+        font-size: 20px;
+        margin: 20px 20px;
+        text-align: center;
+      }
+    }
